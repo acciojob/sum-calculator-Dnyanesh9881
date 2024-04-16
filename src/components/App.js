@@ -8,6 +8,7 @@ const App = () => {
   useEffect(()=>{
       setSum(prev=>prev+parseInt(input));
   }, [input]);
+  
   return (
     <div>
       <input type="number" onChange={(e)=>setInput(e.target.value)}/>
